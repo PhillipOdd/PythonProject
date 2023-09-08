@@ -13,6 +13,14 @@ The Apartment Management System is a Python-based program designed to help manag
 
  **Database Integration**: The system uses an SQLite database to store apartment and client data, ensuring data persistence.
 
+ ## Technologies used
+
+  PYTHON
+  SQL - A database of the properties and the people staying inside. This will be done using mysqli. Clients, apartments, and rooms will have tables that  have different relationships.
+  CLI - allows a tenant to interact with the application and see the properties of different tenants and rooms.
+  SQLITE
+
+
 ## Getting Started
 
 1. Clone the repository to your local machine:
@@ -31,15 +39,15 @@ The Apartment Management System is a Python-based program designed to help manag
    run the "main.py file
 
 
-**Usage**
+# Usage
 
 When you run the program, you will be presented with a menu to perform various actions.
 
-Use options like (A)dd a client, (D)elete a client, or (Q)uit to interact with the system.
+Use options like Add a client, Delete a client, or Quit to interact with the system.
 
 The system will display apartment summaries with information on total rooms and available rooms.
 
-**License**
+# License
 This project is licensed under the MIT License.
 
 
