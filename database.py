@@ -1,11 +1,18 @@
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, Column, Integer, String, Date, ForeignKey
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
+# Define the SQLAlchemy engine and session
+engine = create_engine('sqlite:///database.db', echo=True)
+Session = sessionmaker(bind=engine)
+session = Session()
 
-db_url = 'sqlite://mydatabase.db'
-engine = create_engine(db_url)
+# Create a base class for declarative models
 Base = declarative_base()
 
-def init_db():
-    Base.metadata.create_all(engine)
+
+
+    
+
+# Create the tables in the database
+Base.metadata.create_all(engine)
