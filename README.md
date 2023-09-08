@@ -19,3 +19,27 @@ The Apartment Management System is a Python-based program designed to help manag
 
    ```bash
    git clone https://github.com/PhillipOdd/PythonProject.git
+   
+2. Make sure necessary dependencies are installed e.g.
+   sqlite3
+   pipenv
+
+3. Navigate into the project folder
+   cd pythonproject
+
+4. View the management system
+   run the "main.py file
+
+
+**Usage**
+
+When you run the program, you will be presented with a menu to perform various actions.
+
+Use options like (A)dd a client, (D)elete a client, or (Q)uit to interact with the system.
+
+The system will display apartment summaries with information on total rooms and available rooms.
+
+**License**
+This project is licensed under the MIT License.
+
+
