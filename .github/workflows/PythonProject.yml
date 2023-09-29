@@ -1,0 +1,33 @@
+name: Deploy Flask App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Replace with your desired Python version
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # You should have a requirements.txt file with Flask listed
+
+    - name: Run Flask app
+      run: |
+        export FLASK_APP=app.py  # Replace 'app.py' with your app's filename
+        flask run --host=0.0.0.0 --port=5000 &
+
+    - name: Deploy
+      run: |
+        # Add your deployment commands here
+        # For example, you might use SSH to deploy to a remote server or push to a PaaS like Heroku
+
